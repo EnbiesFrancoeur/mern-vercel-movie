@@ -1,4 +1,10 @@
-import { Box, LinearProgress, Paper, Toolbar } from "@mui/material"
+import {
+  Box,
+  CircularProgress,
+  LinearProgress,
+  Paper,
+  Toolbar
+} from "@mui/material"
 import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import Logo from "./Logo"
@@ -41,7 +47,7 @@ const GlobalLoading = () => {
             transform: "translate(-50%, -50%)"
           }}
         >
-          <Logo />
+          <CircularProgress disableShrink={false} />
         </Box>
       </Paper>
     </>
