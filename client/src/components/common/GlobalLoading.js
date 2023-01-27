@@ -7,7 +7,6 @@ import {
 } from "@mui/material"
 import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
-import Logo from "./Logo"
 
 const GlobalLoading = () => {
   const { globalLoading } = useSelector((state) => state.globalLoading)
